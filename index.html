@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>  
+<html>  
+    <head> 
+      <link rel="stylesheet" href="styles.css">
+      <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+      <script src='scripts.js'></script> 
+        <title>  
+            Rock, Paper, Scissors
+        </title> 
+    </head> 
+    <style type="text/css">
+      body{text-align:center}
+  
+  </style>
+      
+        <h1>Choose rock, paper, or scissors</h1> 
+        <p id = "UP"></p> 
+          <button class='button' id="rock" onClick="btn_click(this.id)">Rock</button> 
+          <button class='button' id="paper" onClick="btn_click(this.id)">Paper</button> 
+          <button class='button' id="scissors" onClick="btn_click(this.id)">Scissors</button>
+        <p id = "DOWN" ></p> 
+
+        <script> 
+            var n_click = document.getElementById("UP"); 
+            var click = document.getElementById("DOWN");
+            function btn_click(clicked) { 
+                click.innerHTML = "You picked "+ clicked;  
+            }
+        </script> 
+         <p id = "Random" ></p> 
+    </body>  
+</html>   
+
+
